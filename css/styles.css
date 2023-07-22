@@ -262,13 +262,50 @@ box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47,
     padding: 188px 0;
     background-image: linear-gradient(to bottom,
             rgba(46, 47, 66, 0.70),
-            rgba(46, 47, 66, 0.70)), url(..//images/peopleoffice.jpg);
+            rgba(46, 47, 66, 0.70)), url(..//images/people-office-mobile@1x.jpg);
     background-position: center;
     max-width: 1440px;
     margin: 0 auto;
     background-size: cover;
     background-repeat: no-repeat;
 }
+
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    .hero-section {
+        background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+            url(..//images/people-office-mobile@2x.jpg);
+    }
+}
+
+@media only screen and (min-width: 429px) {
+    .hero-section {
+        background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+            url(..//images/people-office-tablet@1x.jpg);
+    }
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        .hero-section {
+            background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+                url(..//images/people-office-tablet@2x.jpg);
+        }
+    }
+}
+
+@media only screen and (min-width: 769px) {
+    .hero-section {
+        background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+            url(..//images/people-office-desk@1x.jpg);
+    }
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        .hero-section {
+            background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+                url(..//images/people-office-desk@2x.jpg);
+        }
+    }
+}
+
+
 /* Mobile, tablet */
 @media only screen and (max-width: 1157px) {
   .hero-section {
@@ -485,14 +522,8 @@ box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47,
     gap: 24px;
 }
 
-.list {
-}
 .what-link {
     width: calc((100%-2*24px)/3);
-}
-.link {
-}
-.what-img {
 }
 
 /* Our Team */
@@ -524,9 +555,7 @@ box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47,
     text-align: center;
 }
 
-.team-list{
 
-}
 .team-item{
     margin: 0 auto;
     justify-content: center;
